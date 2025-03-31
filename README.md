@@ -1,6 +1,6 @@
 # CND - Shadowpixel GTM Tag Template
 
-The **Shadowpixel** custom tag template allows you to send a lightweight GET pixel to a specified endpoint with enhanced metadata from the dataLayer and browser context. It also supports optional live validation via cookie-driven logic.
+The **Shadowpixel** custom tag template allows you to send a lightweight GET pixel to a specified endpoint with enhanced metadata from the dataLayer and browser context
 
 ---
 
