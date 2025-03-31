@@ -8,7 +8,7 @@ The **Shadowpixel** custom tag template allows you to send a lightweight GET pix
 
 You can download the latest `.tpl` export of the **Shadowpixel Tag Template** from the following link:
 
-👉 [Download Shadowpixel Tag Template (.tpl)](https://yourdomain.com/path-to-tpl-file)  
+👉 [Download Shadowpixel Tag Template (.tpl)](https://github.com/cloudninedigital/int-shadow-pixel-gtm-template)  
 _(replace with actual hosted link to your `.tpl` file)_
 
 ---
