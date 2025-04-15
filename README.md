@@ -39,35 +39,6 @@ You can download the latest `.tpl` export of the **Shadowpixel Tag Template** fr
 | **Enter the userAgent Custom Javascript file** | Provide a GTM variable (usually a Custom JavaScript variable) that returns `navigator.userAgent`. See below. |
 
 ---
-## 🏷️ Domain Abbreviation Reference
-
-Use this table to see what the abbrevation is of your specific domain
-
-## 🏷️ Domain Abbreviation Reference
-
-Use this table to see what the abbreviation is for your specific domain.
-
-| Abbreviation | Full Domain         | Description                        |
-|--------------|----------------------|------------------------------------|
-| cc           | cc.example.com       | CC production website              |
-| demo         | cloudnine.playground.com    | Demo/test environment              |
-| eftapp       | efteling.com   | Efteling app production site       |
-| eftweb       | efteling.com   | Efteling main website              |
-| fd           | fd.nl       | FD production website              |
-| gstar        | gstar.com    | G-Star production website          |
-| hbm          | www.hbm-machines.com    | HBM production website             |
-| hnkdv        | www.quickdrinks.com  | Heineken DOT Virto (Nigeria) production site    |
-| hnkea        | www.mm.eazle.com    | Heineken Eazle (Myanmar) production   |
-| hnkhy        | www.heishop.com.br    | Heineken Hybris (Brazil) production site |
-| nyp          | www.newyorkpizza.nl     | New York Pizza production website        |
-| pvhb2b       | www.TOBECHECKED.com  | PVH B2B production portal          |
-| rai          | rai.nl      | RAI Amsterdam production website   |
-| timing       | timing.nl   | Timing production environment      |
-| vivara       | vivara.nl   | Vivara production website          |
-| ziggo        | vodafoneziggo.com    | Vodafone Ziggo production environment       |
-
-
-
 
 ## :computer: How to Set Up the User Agent Variable
 
