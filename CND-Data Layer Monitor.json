@@ -1,0 +1,143 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2025-04-29 12:16:04",
+    "containerVersion": {
+        "path": "accounts/94373/containers/612019/versions/0",
+        "accountId": "94373",
+        "containerId": "612019",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/94373/containers/612019",
+            "accountId": "94373",
+            "containerId": "612019",
+            "name": "Deelnemer23",
+            "domainName": [
+                "http://www.emailpanel.nl/deelnemer23"
+            ],
+            "publicId": "GTM-5ZKTKD",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1561628547789",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/94373/containers/612019/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-5ZKTKD"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "94373",
+                "containerId": "612019",
+                "tagId": "1055",
+                "name": "CND - Data Layer Monitor",
+                "type": "cvt_612019_1054",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "endPoint",
+                        "value": "https://collect.cloudninedigital.nl"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "domain",
+                        "value": "demo"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "section",
+                        "value": "test"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "userAgent",
+                        "value": "{{CJS - userAgent}}"
+                    }
+                ],
+                "fingerprint": "1745928913372",
+                "firingTriggerId": [
+                    "1027"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "94373",
+                "containerId": "612019",
+                "triggerId": "1027",
+                "name": "CE - All events",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1739530116443"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "94373",
+                "containerId": "612019",
+                "variableId": "1034",
+                "name": "CJS - userAgent",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  return navigator.userAgent;\n}\n"
+                    }
+                ],
+                "fingerprint": "1739789339128",
+                "formatValue": {}
+            }
+        ],
+        "fingerprint": "1745928964414",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/94373/containers/612019/versions/0?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "94373",
+                "containerId": "612019",
+                "templateId": "1054",
+                "name": "CND - Shadowpixel",
+                "fingerprint": "1745928762583",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"CND - Shadowpixel\",\n  \"brand\": {\n    \"id\": \"brand_dummy\",\n    \"displayName\": \"\",\n    \"thumbnail\": \"data:image/png;base64,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\"\n  },\n  \"description\": \"Implement the shadowpixel from Cloud Nine Digital.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"endPoint\",\n    \"displayName\": \"Enter the Endpoint URL\",\n    \"simpleValueType\": true,\n    \"defaultValue\": \"https://collect.cloudninedigital.nl\"\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"section\",\n    \"displayName\": \"Fill in the section\",\n    \"simpleValueType\": true,\n    \"help\": \"Enter a unique name for the section of the page. For example, use a descriptive label like \\u0027page_type\\u0027.\"\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"domain\",\n    \"displayName\": \"Enter the predefined abbreviation for the domain\",\n    \"simpleValueType\": true,\n    \"help\": \"For example, \\u0027www.cloudninedigital.nl\\u0027 is abbreviated as \\u0027CND\\u0027. This abbreviation is shared by the consultant\"\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"userAgent\",\n    \"displayName\": \"Enter the userAgent Custom Javscript file\",\n    \"simpleValueType\": true,\n    \"help\": \"Create a custom Javascript variable that retrieves the user agent.\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\n// Required GTM functions and utilities\nconst log = require('logToConsole'); // Logs messages to GTM's console\nconst sendPixel = require('sendPixel'); // Sends a tracking pixel request\nconst copyFromWindow = require('copyFromWindow'); // Copies data from the browser window object\nconst copyFromDataLayer = require('copyFromDataLayer'); // Copies data from GTM's dataLayer\nconst encodeUriComponent = require('encodeUriComponent'); // Encodes URL components\nconst JSON = require('JSON'); // JSON object for parsing and stringifying\nconst getUrl = require('getUrl'); // Retrieves the current URL\n\n// Extract values from GTM and window\nconst dataLayer = copyFromWindow('dataLayer'); // Retrieve the dataLayer array\nconst gtmId = copyFromDataLayer('gtm.uniqueEventId'); // Get the GTM event ID\nconst endPoint = data.endPoint; // Endpoint for data tracking\nconst domain = data.domain; // Current domain\nconst section = data.section; // Section of the website\nconst userAgent = data.userAgent; // User agent string\n\nlet latestEntry = {}; // Stores the latest matching dataLayer entry\nlet obj = [];\n\n// 🔍 Find the latest entry in dataLayer matching the current GTM event ID\nif (dataLayer && gtmId) {\n  obj = dataLayer.map(o => {\n    if (!o) return {}; // Skip undefined or null objects\n\n    if (o['gtm.uniqueEventId']) return o; // If object has GTM event ID, return it\n\n    o = JSON.parse(JSON.stringify(o)); // Clone the object to remove constructor\n    log(o); // Log the cloned object for debugging\n\n    // Iterate through object properties and return the first found\n    for (let prop in o) {\n      return o[prop];\n    }\n    return {}; // Ensure something is always returned\n  }).filter(o => o && o['gtm.uniqueEventId'] === gtmId); // Filter for matching GTM event ID\n}\n\n// Use the first matching entry if available; otherwise, return an empty object\nlatestEntry = obj.length ? obj[0] : {};\nlog('Latest dataLayer entry:', latestEntry); // Log the latest found entry\n\n// 🖥️ Function to detect browser type based on user agent\nfunction getBrowser(userAgent) {\n    if (!userAgent) return 'unknown'; // If no user agent, return 'unknown'\n\n    if (userAgent.indexOf(\"Opera\") !== -1 || userAgent.indexOf(\"OPR\") !== -1) return 'Opera';\n    if (userAgent.indexOf(\"Edg\") !== -1) return 'Edge';\n    if (userAgent.indexOf(\"Chrome\") !== -1) return 'Chrome';\n    if (userAgent.indexOf(\"Safari\") !== -1) return 'Safari';\n    if (userAgent.indexOf(\"Firefox\") !== -1) return 'Firefox';\n    if (userAgent.indexOf(\"MSIE\") !== -1 || userAgent.indexOf(\"Trident\") !== -1) return 'IE';\n    \n    return 'unknown'; // If no match, return 'unknown'\n}\n\n// 📱 Function to detect device type based on user agent\nfunction getDeviceType() {\n  let ua = userAgent; // Retrieve user agent\n\n  if (!ua) {\n    return \"unknown\"; // If no user agent, return 'unknown'\n  }\n  \n  ua = ua.toLowerCase(); // Convert to lowercase for consistent comparison\n  \n  // Check if the device is a tablet\n  if (ua.indexOf(\"tablet\") !== -1 || \n      ua.indexOf(\"ipad\") !== -1 || \n      ua.indexOf(\"playbook\") !== -1 || \n      ua.indexOf(\"silk\") !== -1 || \n      (ua.indexOf(\"android\") !== -1 && ua.indexOf(\"mobi\") === -1)) {\n    return \"tablet\";\n  }\n  \n  // Check if the device is a mobile phone\n  if (ua.indexOf(\"mobile\") !== -1 || \n      ua.indexOf(\"iphone\") !== -1 || \n      ua.indexOf(\"ipod\") !== -1 || \n      ua.indexOf(\"android\") !== -1 || \n      ua.indexOf(\"blackberry\") !== -1 || \n      ua.indexOf(\"iemobile\") !== -1 || \n      ua.indexOf(\"kindle\") !== -1 || \n      ua.indexOf(\"silk-accelerated\") !== -1 || \n      ua.indexOf(\"hpw\") !== -1 || \n      ua.indexOf(\"webos\") !== -1 || \n      ua.indexOf(\"opera mobi\") !== -1 || \n      ua.indexOf(\"opera mini\") !== -1) {\n    return \"mobile\";\n  }\n  \n  return \"desktop\"; // Default to desktop if no matches\n}\n\n// Ensure latestEntry has valid values\nconst dataLayerPayload = latestEntry ? JSON.stringify(latestEntry) : {};\n\n// Extract browser and device details\nlet browserName = getBrowser(userAgent); // Extract browser name\nlet deviceName = getDeviceType(userAgent); // Extract device name\n\n// 📡 Construct the payload for tracking\nlet payload = {\n  event: latestEntry['event'] || 'unknown', // Event name or 'unknown' if missing\n  domain: domain, // Website domain \n  url: getUrl(), // Get the current URL\n  device_type: deviceName, // Device type (mobile, tablet, or desktop)\n  browser: browserName, // Browser type\n  section: section, // Website section\n  datalayer_payload: dataLayerPayload // Full dataLayer payload\n};\n\n// 🔗 Generate query string for URL parameters\nlet queryString = '';\nfor (let key in payload) {\n    if (queryString !== '') {\n        queryString += '&'; // Add '&' separator between key-value pairs\n    }\n    queryString += encodeUriComponent(key) + '=' + encodeUriComponent(payload[key]); // Encode values\n}\n\n// 📡 Construct the tracking pixel URL\nconst pixelUrl = endPoint +'/' + domain + '/datalayers-img/' + '?' + queryString;\nlog(pixelUrl);\n\n// 📨 Send pixel request to the endpoint\nsendPixel(pixelUrl, function(response) {\n    log('SendPixel successful:', response); // Log successful request\n    data.gtmOnSuccess(); // ✅ Mark the GTM tag execution as successful\n}, function(error) {\n    log('SendPixel error:', error); // Log any errors\n    data.gtmOnFailure(); // Notify GTM of failure\n});\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"send_pixel\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"allowedUrls\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"logging\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"environments\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"debug\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_data_layer\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"allowedKeys\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"dataLayer\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"get_url\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"urlParts\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        },\n        {\n          \"key\": \"queriesAllowed\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios:\n- name: View promotion event\n  code: \"const mockData = {\\n    \\\"endPoint\\\": \\\"https://collect.cloudninedigital.nl\\\"\\\n    ,\\n    \\\"section\\\":\\\"vfdssfdsfs\\\",\\n    \\\"domain\\\":\\\"demo\\\",\\n    \\\"userAgent\\\"\\\n    :\\\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)\\\n    \\ Chrome/134.0.0.0 Safari/537.36\\\"\\n  };\\n  \\n  mock('copyFromWindow', key =>\\\n    \\ {\\n   if(key === 'dataLayer') {\\n    return dataLayer;\\n  }\\n  });\\n  \\n  mock('copyFromDataLayer',\\\n    \\ key => {\\n  if (key === 'gtm.uniqueEventId'){\\n    return 4;\\n  }\\n  });\\n\\n\\\n    \\  mock('sendPixel', (url, onSuccess, onFailure) => {\\n    onFailure();\\n  });\\n\\\n    \\  \\n  // Call runCode to run the template's code.\\n  runCode(mockData);\\n  \\n\\\n    \\  // Verify that the tag finished successfully.\\n  assertApi('gtmOnFailure').wasCalled();\"\nsetup: |-\n  //Example dataLayer object including a promotion_view\n  const dataLayer = [\n      {\n          \"event\": \"pageView\",\n          \"pageCategory\": \"Luxury Travel Home\",\n          \"gtm.uniqueEventId\": 3\n      },\n      {\n          \"event\": \"view_promotion\",\n          \"ecommerce\": {\n              \"creative_name\": \"Summer Banner\",\n              \"creative_slot\": \"featured_app_1\",\n              \"promotion_id\": \"P_12345\",\n              \"promotion_name\": \"Summer Sale\",\n              \"items\": [\n                  {\n                      \"item_id\": \"SKU_12345\",\n                      \"item_name\": \"Stan and Friends Tee\",\n                      \"affiliation\": \"Google Merchandise Store\",\n                      \"coupon\": \"SUMMER_FUN\",\n                      \"discount\": 2.22,\n                      \"index\": 0,\n                      \"item_brand\": \"Google\",\n                      \"item_category\": \"Apparel\",\n                      \"item_category2\": \"Adult\",\n                      \"item_category3\": \"Shirts\",\n                      \"item_category4\": \"Crew\",\n                      \"item_category5\": \"Short sleeve\",\n                      \"item_list_id\": \"related_products\",\n                      \"item_list_name\": \"Related Products\",\n                      \"item_variant\": \"green\",\n                      \"location_id\": \"ChIJIQBpAG2ahYAR_6128GcTUEo\",\n                      \"price\": 10.01,\n                      \"quantity\": 3\n                  }\n              ]\n          },\n          \"gtm.uniqueEventId\": 4\n      },\n      {\n          \"event\": \"view_promotion\",\n          \"ecommerce\": {\n              \"creative_name\": \"Winter Banner\",\n              \"creative_slot\": \"featured_app_2\",\n              \"promotion_id\": \"P_98765\",\n              \"promotion_name\": \"Winter Sale\",\n              \"items\": [\n                  {\n                      \"item_id\": \"SKU_98765\",\n                      \"item_name\": \"Stan and Friends Tee\",\n                      \"affiliation\": \"Your Travel Buddy\",\n                      \"coupon\": \"WINTER_FUN\",\n                      \"discount\": 4.44,\n                      \"index\": 0,\n                      \"item_brand\": \"Google\",\n                      \"item_category\": \"Apparel\",\n                      \"item_category2\": \"Adult\",\n                      \"item_category3\": \"Shirts\",\n                      \"item_category4\": \"Crew\",\n                      \"item_category5\": \"Short sleeve\",\n                      \"item_list_id\": \"most_viewed\",\n                      \"item_list_name\": \"Most viewed Products\",\n                      \"price\": 20.01,\n                      \"quantity\": 1\n                  }\n              ]\n          },\n          \"gtm.uniqueEventId\": 5\n      },\n      {\n          \"gtm.start\": 1741869570028,\n          \"event\": \"gtm.js\",\n          \"gtm.uniqueEventId\": 6\n      },\n      {\n          \"event\": \"gtm.dom\",\n          \"gtm.uniqueEventId\": 7\n      },\n      {\n          \"event\": \"gtm.load\",\n          \"gtm.uniqueEventId\": 8\n      }\n  ];\n\n\n___NOTES___\n\nCreated on 31/03/2025, 16:16:48\n\n\n"
+            }
+        ]
+    }
+}
