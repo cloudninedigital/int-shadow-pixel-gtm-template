@@ -1,62 +1,83 @@
 # CND - Data Layer Monitor
 
-This document explains how to implement the **CND Data Layer Monitor**. Follow the steps carefully to ensure correct setup and functioning.
+This document explains how to implement the CND Data Layer Monitor. Follow the steps carefully to ensure correct setup and functioning.
 
-## 1. Download the Latest CND Data Layer Monitor File
+---
 
-First, download the latest version of the CND Data Layer Monitor workspace file. This file typically comes in a `.json` format and contains all the necessary Google Tag Manager (GTM) tags, triggers, and variables to monitor your data layer events effectively.
+## 1. Choose Your Implementation Type
 
-**Where to download:**
+You now have two options depending on your situation:
 
-- You may receive the file directly via email or download it from a shared repository or link provided by the CND team.
-- Always ensure you have the latest version to benefit from bug fixes, optimizations, and new features.
+### Option 1: New Implementation (Full Setup)
+Use this option if you are setting up the Data Layer Monitor from scratch.
 
-## 2. Import the Workspace in GTM
+- Download the file: **CND - Data Layer Monitor Full Implementation**
+- This file contains all required tags, triggers, and variables
 
-Once you have the file, you need to import it into your Google Tag Manager container:
+---
 
-1. Open your GTM account and navigate to the correct container.
-2. Click on **Admin** in the sidebar.
-3. Under the **Container** section, select **Import Container**.
-4. Upload the `.json` file you downloaded.
-5. Choose to either:
-   - **Add to existing workspace** (recommended if you want to merge with your current setup), or
-   - **Overwrite** (only if you are setting up a brand new workspace).
-6. When merging, ensure you **Rename conflicting tags, triggers, and variables** to avoid accidental overwriting of your current implementation.
+### Option 2: Update Existing Implementation (Template Only)
+Use this option if you already have the Data Layer Monitor implemented and only want to update to the latest version.
 
-## 3. Fill in the Correct Section (Page_Type)
+- Download the file: **CND - Data Layer Monitor Template Only**
+- This will update only the necessary components without affecting your full setup
 
-The monitor uses the `page_type` data layer value to categorize events appropriately. After importing the workspace:
+---
 
-- Locate the relevant variables or triggers that reference `page_type`.
-- Make sure the `page_type` is correctly set for each page you want to monitor.
-- Examples of `page_type` values could be:
-  - `home`
-  - `product`
-  - `checkout`
-  - `confirmation`
+## 2. Import the Workspace in Google Tag Manager
 
-Properly setting this ensures that events are segmented and tracked accurately across your website.
+Once you have downloaded the correct file:
 
-## 4. Enter the Correct Abbreviation (Example: CND)
+1. Open your GTM account and navigate to the correct container  
+2. Click on **Admin**  
+3. Under the **Container** section, select **Import Container**  
+4. Upload the `.json` file  
 
-All Data Layer Monitor implementations use a client-specific abbreviation. Please insert the provided abbreviation into the tag configuration.
+### Recommended Settings
 
-If you have not yet received your abbreviation, please contact your Cloud Nine Digital consultant to obtain it.
+When importing, use the following settings:
 
-Using the correct abbreviation ensures consistency and clarity in tracking and reporting.
+- **Workspace**: Select **New**
+- **Import option**: Select **Merge**
+- **Conflict resolution**: Select **Overwrite conflicting tags, triggers and variables**
 
-## 5. Optional: Block GTM Events by Adding a Blocker
+---
 
-Sometimes, you might want to monitor data layer pushes without actually firing any GTM events.
-To do this, you can implement a blocker:
+## 3. Configure the Correct `page_type`
 
-1. Create a new **Trigger** in GTM, for example called **Block GTM Events**.
-2. Set the trigger type to custom event
-3. Add the following syntax: _^gtm.*_ . Check the 'Uses regex' box
-4. Add this tag as a blocker on the _CND - Data Layer Monitor_ tag
+The monitor uses the `page_type` data layer value to categorize events.
 
-This will block the Data Layer Monitor to sent events when the event has gtm in the name.
+After importing:
+
+- Locate variables or triggers that reference `page_type`  
+- Ensure it is correctly set for each page  
+
+### Example values:
+- `home`  
+- `product`  
+- `checkout`  
+- `confirmation`  
+
+### If `page_type` is not available
+
+If your data layer does **not** include a `page_type` parameter:
+
+- You can leave this field **blank**  
+- The Data Layer Monitor will still function correctly  
+- Events will simply not be segmented by page type  
+
+> 💡 Tip: Adding a `page_type` parameter is recommended for better insights and segmentation, but it is not required for the monitor to work.
+
+---
+
+## 4. Add the Client Abbreviation
+
+Each implementation uses a client-specific abbreviation.
+
+- Insert the provided abbreviation (e.g. **CND**, **eftweb** or **NYP**) into the tag configuration  
+- If you don’t have it yet, request it from your Cloud Nine Digital contact  
+
+This ensures consistency in tracking and reporting.
 
 ---
 
