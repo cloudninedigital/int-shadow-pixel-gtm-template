@@ -70,11 +70,11 @@ If your data layer does **not** include a `page_type` parameter:
 
 ---
 
-## 4. Add the Client Abbreviation
+## 4. Add the Client ID
 
-Each implementation uses a client-specific abbreviation.
+Each implementation uses a client-specific ID.
 
-- Insert the provided abbreviation (e.g. **CND**, **eftweb** or **NYP**) into the tag configuration  
+- Insert the provided Client ID (e.g. **CND**, **eftweb** or **NYP**) into the tag configuration  
 - If you don’t have it yet, request it from your Cloud Nine Digital contact  
 
 This ensures consistency in tracking and reporting.
